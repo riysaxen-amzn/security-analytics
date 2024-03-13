@@ -155,7 +155,6 @@ public class FindingsService {
                 findingIndexName,
                 monitorIds, queryBuilder
         );
-
         AlertingPluginInterface.INSTANCE.getFindings((NodeClient) client, req, new ActionListener<>() {
                     @Override
                     public void onResponse(
